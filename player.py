@@ -1,15 +1,21 @@
 class Player:
-    def __init__(self, name, p1, p2):
-        self.name = name
+    def __init__(self, firstName, lastName, p1, p2, posGranted):
+        self.firstName = firstName
+        self.lastName = lastName
         self.p1 = p1
         self.p2 = p2
+        self.posGranted = posGranted
 
-    def getName(player):
-        return player.name
-    def getPosOne(player):
-        return player.p1
-    def getPosTwo(player):
-        return player.p2
+    def getFirstName:
+        return firstName
+    def getLastName:
+        return lastName
+    def getPosOne:
+        return p1
+    def getPosTwo:
+        return p2
+    def getPosGranted:
+        return posGranted
 
     def setName(player, name):
         player.name = name
@@ -17,6 +23,19 @@ class Player:
         player.p1 = p1
     def setPosTwo(player, p2):
         player.p2 = p2
+
+    def printStats:
+        print("Name: " + firstName +  " " + lastName + "\n")
+        print("Position: " + posGranted + "\n")
+
+    def switchPositionGranted:
+        if posGranted == p1:
+            posGranted = p2
+        elif posGranted == p2:
+            posGranted = p1
+        
+    
+        
 
     
         
